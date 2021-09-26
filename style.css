@@ -1,0 +1,63 @@
+body {
+	background-image: url("./images/pattern-background-desktop.svg");
+	background-repeat: no-repeat;
+	background-color: hsl(225, 100%, 94%);
+	min-height: 100vh;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: "Red Hat Display";
+}
+#card {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+#order-summary-card {
+	height: 697px;
+	width: 450px;
+	padding: 0;
+	margin: 0;
+	border-style: hidden;
+	border-radius: 20px;
+	background-color: hsl(225, 100%, 98%);
+	overflow: hidden;
+}
+
+img {
+	max-width: 100%;
+	object-fit: contain;
+}
+
+/* #card {
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	display: grid;
+	align-self: center;
+}   */
+
+/* #container {
+	display: grid;
+	align-self: center;
+	overflow: hidden;
+	height: 620px;
+	width: 390px;
+	background-color: hsl(225, 100%, 98%);
+	border-style: hidden;
+	border-radius: 3%;
+}
+
+img {
+	max-width: 100%;
+	object-fit: contain;
+}
+
+#select-plan {
+	height: 100px;
+	width: 200px;
+	background-color: hsl(225, 100%, 94%);
+	border-radius: 4%;
+} */
