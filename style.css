@@ -6,7 +6,7 @@ body {
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	font-family: "Red Hat Display";
+	font-family: "Red Hat Display", sans-serif;
 }
 #card {
 	display: flex;
@@ -25,39 +25,62 @@ body {
 	background-color: hsl(225, 100%, 98%);
 	overflow: hidden;
 }
+#card-body {
+	height: 477px;
+	width: 354px;
+	padding-left: 10.5%;
+}
 
 img {
 	max-width: 100%;
 	object-fit: contain;
 }
 
-/* #card {
-	display: flex;
-	justify-content: center;
-	align-items: center; 
-	display: grid;
-	align-self: center;
-}   */
+#card-heading {
+	font-weight: 900;
+	color: hsl(223, 47%, 23%);
+	text-align: center;
+	margin-top: 10%;
+}
 
-/* #container {
-	display: grid;
-	align-self: center;
-	overflow: hidden;
-	height: 620px;
-	width: 390px;
-	background-color: hsl(225, 100%, 98%);
+#card-paragraph {
+	font-weight: 500;
+	color: hsl(224, 23%, 55%);
+	text-align: center;
+	margin-bottom: 8%;
+}
+
+#plan {
+	height: 99px;
+	width: 354px;
+	padding: 0;
 	border-style: hidden;
-	border-radius: 3%;
+	background-color: hsl(240, 100%, 97%);
+	border-radius: 13px;
 }
 
-img {
-	max-width: 100%;
-	object-fit: contain;
+#plan-details {
+	margin-left: 5%;
 }
 
-#select-plan {
-	height: 100px;
-	width: 200px;
-	background-color: hsl(225, 100%, 94%);
-	border-radius: 4%;
-} */
+#plan-name {
+	font-weight: 700;
+	color: hsl(223, 47%, 23%);
+}
+
+#plan-price {
+	font-weight: 500;
+	color: hsl(224, 23%, 55%);
+}
+
+#proceed-to-payment {
+	height: 50px;
+	width: 100%;
+	margin-top: 10%;
+	margin-bottom: 10%;
+	border-style: hidden;
+	background-color: hsl(245, 75%, 52%);
+	border-radius: 10px;
+	color: hsl(240, 100%, 97%);
+	font-weight: 700;
+}
