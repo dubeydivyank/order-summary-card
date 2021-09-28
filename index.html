@@ -5,22 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order Summary</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://fonts.google.com/specimen/Red+Hat+Display">
 </head>
 
 <body>
-    <main id="card">
-         
+    <main id="container">
         <div id="order-summary-card">
             
-            <img src="./images/illustration-hero.svg" alt="illustration-hero">
+            <img src="./images/illustration-hero.svg" alt="girl-enjoying-music">
             
 
-            <div id="card-body">  
-               
-                <h1 id="card-heading">
-                    Order Summary
-                </h1>
+            <section id="card-body">  
+
+                <h1 id="card-heading">Order Summary</h1>
                 
                 <p id="card-paragraph">
                     You can now listen to millions of songs, audiobooks, and podcasts on any 
@@ -28,24 +24,31 @@
                 </p> 
                 
                 <div id="plan">
+
                     <span id="plan-music-icon">
                         <img src="./images/icon-music.svg" alt="icon-music">
                     </span>
-                    <span id="plan-details">
+
+                    <div id="plan-details">
                         <span id="plan-name">Annual Plan</span>
                         <br>
                         <span id="plan-price"> $59.99/year</span>
+                    </div>
+                    
+                    <span id="change-plan">
+                        <a href="#">Change</a>
                     </span>
-                    <!-- <button id="change-plan">Change</button> -->
-                    <span id="change-plan"><a  href="#">Change</a></span>
-                    <!-- <a id="change-plan" href="#">Change</a> -->
+                    
                 </div>
-            <button id="proceed-to-payment">Proceed to Payment</button>
+
+
+                <button id="proceed-to-payment">Proceed to Payment</button>
+                    
                 <br>
-            <span id="cancel-order">
-                <a href="#">Cancel Order</a>
-            </span>
-            </div>
+
+                <span id="cancel-order"> <a href="#">Cancel Order</a> </span>
+
+            </section>
         </div>
         
     </main>

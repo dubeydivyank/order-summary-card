@@ -1,14 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=Red+Hat+Display:500,700,900");
+
+:root {
+	--Pale-blue: hsl(225, 100%, 94%);
+	--Bright-blue: hsl(245, 75%, 52%);
+	--Very-pale-blue: hsl(225, 100%, 98%);
+	--Desaturated-blue: hsl(224, 23%, 55%);
+	--Dark-blue: hsl(223, 47%, 23%);
+}
+
 body {
 	background-image: url("./images/pattern-background-desktop.svg");
 	background-repeat: no-repeat;
-	background-color: hsl(225, 100%, 94%);
+	background-color: var(--Pale-blue);
 	min-height: 100vh;
 	width: 100%;
 	margin: 0;
 	padding: 0;
 	font-family: "Red Hat Display", sans-serif;
 }
-#card {
+
+#container {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -22,13 +33,15 @@ body {
 	margin: 0;
 	border-style: hidden;
 	border-radius: 20px;
-	background-color: hsl(225, 100%, 98%);
+	background-color: hsl(0, 0%, 100%);
 	overflow: hidden;
+	box-shadow: 0px 30px 28px -13px hsla(245, 75%, 52%, 0.19);
 }
+
 #card-body {
 	height: 477px;
 	width: 354px;
-	padding-left: 10.5%;
+	margin-left: 10.6%;
 }
 
 img {
@@ -37,35 +50,50 @@ img {
 }
 
 #card-heading {
+	font-size: 28px;
+	color: var(--Dark-blue);
 	font-weight: 900;
-	color: hsl(223, 47%, 23%);
 	text-align: center;
-	margin-top: 10%;
+	margin-top: 11.5%;
+	margin-bottom: 0%;
 }
 
 #card-paragraph {
 	font-weight: 500;
-	color: hsl(224, 23%, 55%);
+	font-size: 16px;
+	color: var(--Desaturated-blue);
 	text-align: center;
-	margin-bottom: 8%;
+	margin-top: 4.5%;
+	margin-bottom: 5.5%;
+	line-height: 166%;
 }
 
 #plan {
 	height: 99px;
 	width: 354px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 	padding: 0;
 	border-style: hidden;
-	background-color: hsl(240, 100%, 97%);
+	background-color: hsl(225, 100%, 98%);
 	border-radius: 13px;
 }
 
+#plan-music-icon {
+	justify-content: left;
+	margin-left: 7%;
+	margin-top: 1%;
+}
+
 #plan-details {
-	margin-left: 5%;
+	margin-left: 5.5%;
 }
 
 #plan-name {
-	font-weight: 700;
-	color: hsl(223, 47%, 23%);
+	font-weight: 900;
+	/* color: hsl(223, 47%, 23%); */
+	color: var(--Dark-blue);
 }
 
 #plan-price {
@@ -73,14 +101,25 @@ img {
 	color: hsl(224, 23%, 55%);
 }
 
+#change-plan {
+	margin-left: 25%;
+}
+
 #proceed-to-payment {
 	height: 50px;
 	width: 100%;
-	margin-top: 10%;
-	margin-bottom: 10%;
+	margin-top: 8.8%;
+	margin-bottom: 8%;
 	border-style: hidden;
-	background-color: hsl(245, 75%, 52%);
+	background-color: var(--Bright-blue);
+
 	border-radius: 10px;
 	color: hsl(240, 100%, 97%);
-	font-weight: 700;
+	font-weight: 900;
+	box-shadow: 0px 20px 20px hsla(245, 75%, 52%, 0.2);
+}
+
+#cancel-order {
+	display: flex;
+	justify-content: center;
 }
